@@ -10,6 +10,11 @@
       "StackName": "amplify-figmagjlv6-staging-210133",
       "StackId": "arn:aws:cloudformation:us-east-1:069635315570:stack/amplify-figmagjlv6-staging-210133/df294500-d2ff-11ec-a821-12b8bb993cb5",
       "AmplifyAppId": "d1va0uh8hc3fyp"
+    },
+    "categories": {
+      "auth": {
+        "figmagjlv6": {}
+      }
     }
   }
 }
