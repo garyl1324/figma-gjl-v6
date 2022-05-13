@@ -7,7 +7,9 @@ import EditRecipe from './EditRecipe'
 import { 
   RecipeCollection,
   RecipeBar,
-  Recipe
+  Recipe,
+  CreateRecipe,
+  UiEditRecipe
 } from './ui-components';
 
 class App extends Component {
