@@ -14,6 +14,7 @@ import { Flex, Icon, SearchField, Text } from "@aws-amplify/ui-react";
 export default function RecipeBar(props) {
   const { recipebar, overrides, ...rest } = props;
   const recipesOnClick = useNavigateAction({ type: "url", url: "/" });
+  const createOnClick = useNavigateAction({ type: "url", url: "/new" });
   return (
     <Flex
       gap="20px"
@@ -123,6 +124,9 @@ export default function RecipeBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Create"
+          onClick={() => {
+            createOnClick();
+          }}
           {...getOverrideProps(overrides, "Create")}
         ></Text>
         <Text

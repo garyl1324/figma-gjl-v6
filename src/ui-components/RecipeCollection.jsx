@@ -22,6 +22,8 @@ export default function RecipeCollection(props) {
   return (
     <Collection
       type="list"
+      searchPlaceholder="Search..."
+      itemsPerPage={6}
       direction="column"
       justifyContent="stretch"
       items={items || []}

@@ -6,10 +6,7 @@ import MakeRecipe from './MakeRecipe'
 import EditRecipe from './EditRecipe'
 import { 
   RecipeCollection,
-  RecipeBar,
-  Recipe,
-  CreateRecipe,
-  UiEditRecipe
+  RecipeBar
 } from './ui-components';
 
 class App extends Component {
@@ -17,7 +14,7 @@ class App extends Component {
   return (
     <div className="App"><header className="App-header">
       <Routes>
-        <Route exact path='/' element={<div><RecipeBar/></div>} />
+        <Route exact path='/' element={<div><RecipeBar/><RecipeCollection/></div>} />
         <Route exact path='/list' element={<RecipeCollection/>}/>
         <Route exact path='/new' element={<MakeRecipe/>} />
         <Route exact path='/edit/:cid' element={<EditRecipe/>} />
